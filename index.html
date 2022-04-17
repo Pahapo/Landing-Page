@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for mobile -->
+        <title>Создание сайтов с SITW</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/fonts.css" type="text/css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css">
+
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="nav">
+                    <a style="opacity: 0;" href="#"><img src="img/moon.png" width="14px" alt=""></a>
+                    <ul class="nav-items">
+                        <li class="nav-item"><a class="a" href="#about">Главная</a></li>
+                        <li class="nav-item"><a class="a" href="#example-works">Примеры работ</a></li>
+                        <li class="nav-item"><a class="a" href="#services">Заказать</a></li>
+                    </ul>
+                    <a class="header-img" href="#"><img src="img/moon.png" width="14px" alt="day/night"></a>
+                </div>
+            </div>
+        </header>
+    
+        <div class="start-page">
+            <div class="container">
+                <div class="about" id="about">
+                    <div class="shape shape-big"></div>
+                    <div class="shape shape-small"></div>
+
+                    <div class="about-logo">
+                        <img class="logo-img" src="img/logo.png" alt="logo">
+                    </div>
+
+                    <div class="about-text">
+                        <ul class="text-items">
+                            <li class="text-item"><h1>Макет</h1></li>
+                            <li class="text-item"><h1>Сайт</h1></li>
+                            <li class="text-item"><h1>Адаптивная</h1></li>
+                            <li class="text-item"><h1>вёрстка</h1></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+        </div>
+
+            <div class="container">
+                <div class="headline" id="example-works">
+                    <img src="img/works.png">
+                    <h1>Примеры работ</h1>
+                </div>
+
+                <div class="example-works grid">
+                    <ul class="featured-filters">
+                        <li>
+                            <button class="featured-item active-featured" data-filter="all">
+                                <span>Всё</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured-item" data-filter=".landing">
+                                <span>Лендинг</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured-item" data-filter=".business-card">
+                                <span>Визитка</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured-item" data-filter=".cms-site">
+                                <span>CMS</span>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="featured-content grid">
+                        <article class="featured-card mix landing">  <!-- landing -->
+                            <div class="shape shape-small"></div>
+
+                            <a href="img/example1.jpg" target="_blank" class="featured-img">
+                                <img src="img/example1.1.jpg" alt="Лендинг">
+                            </a>
+                            <div class="featured-headline">
+                                <h1>NCFC</h1>
+                            </div>
+                            <a href="img/example1.jpg" target="_blank" class="featured-button">
+                                <img class="animation-img" src="img/search.png" alt="open">
+                                <h2>Посмотреть</h2>
+                            </a>
+                        </article>
+
+                        <article class="featured-card mix landing">  <!-- landing -->
+                            <div class="shape shape-small"></div>
+
+                            <a href="img/example2.jpg" target="_blank" class="featured-img">
+                                <img src="img/example2.2.jpg" alt="Лендинг">
+                            </a>
+                            <div class="featured-headline">
+                                <h1>TALK</h1>
+                            </div>
+                            <a href="img/example2.jpg" target="_blank" class="featured-button">
+                                <img class="animation-img" src="img/search.png" alt="open">
+                                <h2>Посмотреть</h2>
+                            </a>
+                        </article>
+
+                        <article class="featured-card mix business-card">  <!-- business-card -->
+                            <div class="shape shape-small"></div>
+
+                            <a href="img/example3.jpg" target="_blank" class="featured-img">
+                                <img src="img/example3.3.jpg" alt="Лендинг">
+                            </a>
+                            <div class="featured-headline">
+                                <h1>RECRP</h1>
+                            </div>
+                            <a href="img/example3.jpg" target="_blank" class="featured-button">
+                                <img class="animation-img" src="img/search.png" alt="open">
+                                <h2>Посмотреть</h2>
+                            </a>
+                        </article>
+
+                        <article class="featured-card mix cms-site">  <!-- cms-site -->
+                            <div class="shape shape-small"></div>
+
+                            <a href="img/example4.jpg" target="_blank" class="featured-img">
+                                <img src="img/example4.4.jpg" alt="Лендинг">
+                            </a>
+                            <div class="featured-headline">
+                                <h1>Coffee</h1>
+                            </div>
+                            <a href="img/example4.jpg" target="_blank" class="featured-button">
+                                <img class="animation-img" src="img/search.png" alt="open">
+                                <h2>Посмотреть</h2>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="container">
+                <div class="headline" id="services">
+                    <img src="img/bag2.png">
+                    <h1>Заказать</h1>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="services swiper-wrapper">
+                        <article class="service swiper-slide">
+                            <div class="services-headline">
+                                <h1>Лендинг</h1>
+                            </div>
+                            <div class="services-block">
+                                <div class="shape shape-small"></div>
+                                <div class="services-img">
+                                    <img src="img/vizitka.png" alt="Визитка">
+                                </div>
+                                <div class="services-text">
+                                    <h3>
+                                        <b>Лендинг</b> — это одностраничный сайт, который побуждает посетителя к действию: купить, зарегистрироваться, 
+                                        оставить заявку, подписаться. Лендинг используют в маркетинге для рекламы и продажи товара или услуги, 
+                                        сбора контактных данных потенциальных покупателей (лидов), проверки вероятного спроса.
+                                    </h3> 
+                                </div>
+                            </div>
+                            <div class="services-benefits">
+                                <ul class="benefits-items">
+                                    <li class="benefits-item">
+                                        <img src="img/plus.png">
+                                        <h3>надёжный старт</h3>
+                                    </li>
+                                    <li class="benefits-item">
+                                        <img src="img/plus.png">
+                                        <h3>рассказать о продукте</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="service swiper-slide">
+                            <div class="services-headline">
+                                <h1>Визитка</h1>
+                            </div>
+                            <div class="services-block">
+                                <div class="shape shape-small"></div>
+                                <div class="services-img">
+                                    <img src="img/landing.png" alt="Лендинг">
+                                </div>
+                                <div class="services-text">
+                                    <h3>
+                                        <b>Сайт-визитка</b> — это небольшой, чаще всего одностраничный сайт, который лаконично выполняет одну из функций: 
+                                        продажа товара, предоставление информации о компании, услуге или мероприятии. Отличается быстротой разработки 
+                                        и относительно небольшой стоимостью. Иногда используется как сайт-заглушка.
+                                    </h3> 
+                                </div>
+                            </div>
+                            <div class="services-benefits">
+                                <ul class="benefits-items">
+                                    <li class="benefits-item">
+                                        <img src="img/plus.png">
+                                        <h3>быстрый запуск</h3>
+                                    </li>
+                                    <li class="benefits-item">
+                                        <img src="img/plus.png">
+                                        <h3>рассказать о себе</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="service swiper-slide">
+                            <div class="services-headline">
+                                <h1>Сайт на CMS</h1>
+                            </div>
+                            <div class="services-block">
+                                <div class="shape shape-small"></div>
+                                <div class="services-img">
+                                    <img src="img/cms.png" alt="CMS">
+                                </div>
+                                <div class="services-text">
+                                    <h3>
+                                        <b>CMS WordPress</b> ― это система создания и управления сайтом. Это визуально удобный интерфейс, с помощью которого 
+                                        можно добавлять и редактировать содержимое сайта. Любой сайт представляет из себя совокупность файлов. Эти файлы 
+                                        называются контентом. Нельзя просто выложить все файлы в Сеть и получить готовый сайт. Для контента требуется 
+                                        оболочка — эскиз, свёрстанные страницы и многое другое. 
+                                    </h3> 
+                                </div>
+                            </div>
+                            <div class="services-benefits">
+                                <ul class="benefits-items">
+                                    <li class="benefits-item">
+                                        <img src="img/plus.png">
+                                        <h3>удобство</h3>
+                                    </li>
+                                    <li class="benefits-item">
+                                        <img src="img/plus.png">
+                                        <h3>качество</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+         
+                <a href="#popup" class="order-button popup-link">
+                    <div class="pay">
+                        <img class="animation-img" src="img/bag2.png">
+                        <h2>Заказать</h2>                         
+                    </div>
+                </a> 
+            </div>
+
+            <div class="line"></div>
+
+            <div class="container">
+                <div class="spoiler one">
+                    <div class="spoiler-item">
+                        <div class="spoiler-title">Кто мы?</div>
+                        <div class="spoiler-text">Мы молодая команда разработчиков, которая готова помочь вам и вашему бизнесу.</div>
+                    </div>
+                    <div class="spoiler-item">
+                        <div class="spoiler-title">Что делать, если идея только в голове?</div>
+                        <div class="spoiler-text">Мы поможем создать макет для вашего будущего сайта, а затем дадим ему жизнь!</div>
+                    </div>
+                    <div class="spoiler-item">
+                        <div class="spoiler-title">Сколько это стоит?</div>
+                        <div class="spoiler-text">Мы не оставим вас без гроша в кармане. Цены на услуги ниже среднего, поэтому вам будет комфортно работать с нами.</div>
+                    </div>
+                 </div>
+            </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-item">
+                    <img class="logo-img" src="img/logo.png" alt="logo">
+                    <h3>© 2022-2023 SITW</h3>
+                </div>
+            </div>
+        </footer>
+
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="shape shape-small"></div>
+                    <a href="#header" class="popup__close close-popup">X</a>
+
+                    <div class="job-choice">
+                        <div>
+                            <input type="radio" id="v" name="choice" value="v" checked><br>
+                            <label class="lan lan-active" for="v">Лендинг</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="b" name="choice" value="b"><br>
+                            <label class="viz" for="b">Визитка</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="c" name="choice" value="c"><br>
+                            <label class="cms" for="c">CMS</label>
+                        </div>
+                    </div>
+                    
+                    <div class="lan-choice">
+                        <form name="test" method="post">
+
+                            <!-- Start hidden input -->
+                                <input type="hidden" name="project_name" value="SITW">
+                                <input type="hidden" name="admin_email" value="pashapopov4055@gmail.com">  
+                                <input type="hidden" name="form_subject" value="Заявка на создание сайта">
+                                <input type="hidden" name="form_subject_text" value="Неоходимо создать <span style='color: #9c92fb;'>Лендинг</span>">
+                            <!-- End hidden input -->
+
+                            <input type="text" name="Имя" placeholder="Имя" required><br>
+                            <input type="tel" name="Номер телефона" placeholder="Номер телефона"><br>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            
+                            <input type="submit" name="submit" class="submit form__btn" value="Отправить">
+                        </form>
+                    </div>
+
+                    <div class="viz-choice hidden_question">
+                        <form name="test" method="post">
+
+                            <!-- Start hidden input -->
+                                <input type="hidden" name="project_name" value="SITW">
+                                <input type="hidden" name="admin_email" value="pashapopov4055@gmail.com">  
+                                <input type="hidden" name="form_subject" value="Заявка на создание сайта">
+                                <input type="hidden" name="form_subject_text" value="Неоходимо создать <span style='color: #9c92fb;'>Визитку</span>">
+                            <!-- End hidden input -->
+
+                            <input type="text" name="Имя" placeholder="Имя" required><br>
+                            <input type="tel" name="Номер телефона" placeholder="Номер телефона"><br>
+                            <input type="email" name="Email" placeholder="Email" required> 
+                            
+                            <input type="submit" name="submit" class="submit form__btn" value="Отправить">
+                        </form>
+                    </div>
+
+                    <div class="cms-choice hidden_question">
+                        <form name="test" method="post">
+
+                            <!-- Start hidden input -->
+                                <input type="hidden" name="project_name" value="SITW">
+                                <input type="hidden" name="admin_email" value="pashapopov4055@gmail.com">  
+                                <input type="hidden" name="form_subject" value="Заявка на создание сайта">
+                                <input type="hidden" name="form_subject_text" value="Неоходимо создать <span style='color: #9c92fb;'>сайт на CMS</span>">
+                            <!-- End hidden input -->
+
+                            <input type="text" name="Имя" placeholder="Имя" required><br>
+                            <input type="tel" name="Номер телефона" placeholder="Номер телефона"><br>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            
+                            <input type="submit" name="submit" class="submit form__btn" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
