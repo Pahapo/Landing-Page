@@ -2,9 +2,6 @@
 
 let SwiperServices = new Swiper(".mySwiper", {
     loop: true, // бесконечный слайдер
-    spaceBetween: 24,
-    slidesPerView: 2.5,  // количество слайдеров для показа
-    spaceBetween: 30, // отступ между слайдами
     mousewheel: {  // прокрутка мышью с помощью колеса
         sensitivity: 1,
     },
@@ -12,11 +9,28 @@ let SwiperServices = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
-  });
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is >= 480px
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 640px
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    },
+});
 
 /*  MIXITUP FILTER FEATURED  */
 
-let mixerFeatured = mixitup('.featured-content', { 
+let mixerFeatured = mixitup('.featured-content', {
    selectors: {
    target: '.featured-card'
    },
@@ -39,8 +53,8 @@ linkFeatured.forEach(i=> i.addEventListener('click', activeFeatured))
 
 $(function(){
 
-  var radio = document.getElementsByName('choice'); // form replacement
-  for (var i = 0; i < radio.length; i++) {
+  let radio = document.getElementsByName('choice'); // form replacement
+  for (let i = 0; i < radio.length; i++) {
     radio[i].onchange = function() {
     if (this.value == "v") {  // form for a lan
       console.log('1');
@@ -95,4 +109,10 @@ $(document).ready(function() {
 
     $(this).toggleClass('active').next().slideToggle(300);
   });
+});
+
+/*  MENU  */
+
+$('.header').click(function() {
+  $(this).toggleClass("header-active");
 });
