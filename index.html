@@ -19,18 +19,22 @@
     </head>
 
     <body>
+        <label class="label" for="check">
+            <input class="label-input" type="checkbox" id="check"/> 
+            <span class="label-span"></span>
+            <span class="label-span"></span>
+            <span class="label-span"></span>
+        </label>
+        <div>
+            <img class="logo-img logo_top_mobile" src="img/logo.png" alt="logo">
+        </div>
         <header class="header">
-            <div class="container">
-                <div class="nav">
-                    <a style="opacity: 0;" href="#"><img src="img/moon.png" width="14px" alt=""></a>
-                    <ul class="nav-items">
-                        <li class="nav-item"><a class="a" href="#about">Главная</a></li>
-                        <li class="nav-item"><a class="a" href="#example-works">Примеры работ</a></li>
-                        <li class="nav-item"><a class="a" href="#services">Заказать</a></li>
-                    </ul>
-                    <a class="header-img" href="#"><img src="img/moon.png" width="14px" alt="day/night"></a>
-                </div>
-            </div>
+            <ul class="nav-items">
+                <li class="nav-item"><a class="a" href="#about">Главная</a></li>
+                <li class="nav-item"><a class="a" href="#example-works">Примеры работ</a></li>
+                <li class="nav-item"><a class="a" href="#services">Заказать</a></li>
+                <li class="nav-item"><a href="#"><img src="img/moon.png" width="14px" alt="day/night"></a></li>
+            </ul>
         </header>
     
         <div class="start-page">
@@ -56,7 +60,7 @@
 
             <div class="line"></div>
         </div>
-
+  
             <div class="container">
                 <div class="headline" id="example-works">
                     <img src="img/works.png">
@@ -137,7 +141,7 @@
                             <div class="shape shape-small"></div>
 
                             <a href="img/example4.jpg" target="_blank" class="featured-img">
-                                <img src="img/example4.4.jpg" alt="Лендинг">
+                                <img src="img/example4.4.jpg" alt="CMS">
                             </a>
                             <div class="featured-headline">
                                 <h1>Coffee</h1>
@@ -272,7 +276,7 @@
                 <div class="spoiler one">
                     <div class="spoiler-item">
                         <div class="spoiler-title">Кто мы?</div>
-                        <div class="spoiler-text">Мы молодая команда разработчиков, которая готова помочь вам и вашему бизнесу.</div>
+                        <div class="spoiler-text">Мы молодая команда разработчиков, готовая помочь вам и вашему бизнесу.</div>
                     </div>
                     <div class="spoiler-item">
                         <div class="spoiler-title">Что делать, если идея только в голове?</div>
@@ -285,14 +289,14 @@
                  </div>
             </div>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-item">
-                    <img class="logo-img" src="img/logo.png" alt="logo">
-                    <h3>© 2022-2023 SITW</h3>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-item">
+                        <img class="logo-img" src="img/logo.png" alt="logo">
+                        <h3>© 2022-2023 SITW</h3>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
 
         <div id="popup" class="popup">
             <div class="popup__body">
@@ -309,12 +313,8 @@
                             <input type="radio" id="b" name="choice" value="b"><br>
                             <label class="viz" for="b">Визитка</label>
                         </div>
-                        <div>
-                            <input type="radio" id="c" name="choice" value="c"><br>
-                            <label class="cms" for="c">CMS</label>
-                        </div>
                     </div>
-                    
+            
                     <div class="lan-choice">
                         <form name="test" method="post">
 
@@ -326,8 +326,7 @@
                             <!-- End hidden input -->
 
                             <input type="text" name="Имя" placeholder="Имя" required><br>
-                            <input type="tel" name="Номер телефона" placeholder="Номер телефона"><br>
-                            <input type="email" name="Email" placeholder="Email" required>
+                            <input type="tel" name="Номер телефона" placeholder="Номер телефона" required>
                             
                             <input type="submit" name="submit" class="submit form__btn" value="Отправить">
                         </form>
@@ -344,26 +343,7 @@
                             <!-- End hidden input -->
 
                             <input type="text" name="Имя" placeholder="Имя" required><br>
-                            <input type="tel" name="Номер телефона" placeholder="Номер телефона"><br>
-                            <input type="email" name="Email" placeholder="Email" required> 
-                            
-                            <input type="submit" name="submit" class="submit form__btn" value="Отправить">
-                        </form>
-                    </div>
-
-                    <div class="cms-choice hidden_question">
-                        <form name="test" method="post">
-
-                            <!-- Start hidden input -->
-                                <input type="hidden" name="project_name" value="SITW">
-                                <input type="hidden" name="admin_email" value="pashapopov4055@gmail.com">  
-                                <input type="hidden" name="form_subject" value="Заявка на создание сайта">
-                                <input type="hidden" name="form_subject_text" value="Неоходимо создать <span style='color: #9c92fb;'>сайт на CMS</span>">
-                            <!-- End hidden input -->
-
-                            <input type="text" name="Имя" placeholder="Имя" required><br>
-                            <input type="tel" name="Номер телефона" placeholder="Номер телефона"><br>
-                            <input type="email" name="Email" placeholder="Email" required>
+                            <input type="tel" name="Номер телефона" placeholder="Номер телефона" required> 
                             
                             <input type="submit" name="submit" class="submit form__btn" value="Отправить">
                         </form>
